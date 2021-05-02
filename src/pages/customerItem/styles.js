@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import TextField from "@material-ui/core/TextField";
+
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -32,28 +34,25 @@ text-align: center;
 font-size: 24px;
 font-weight: bold;
 `
-
-export const FloatingButtom = styled.div`
- position: absolute;
- right: 10px;
- bottom: 10px;
- height: 50px;
- width: 50px;
- background-color: lightgreen;
- border-radius: 25px;
- cursor: pointer;
- &:hover {
-     background-color: green;
- }
-`
-
-export const Add = styled.label`
+export const FormStyled = styled.form`
 display: flex;
 flex-direction: column;
-height: 50px;
-width: 50px;
-font-size: 26px;
-color: white;
-align-items: center;
-justify-content: center;
+border: 1px solid #ddd;
+padding: 10px;
+`
+
+export const TextFieldStyled = styled(TextField)`
+width: 400px;
+height: 60px;
+margin-bottom: 100px;
+`
+
+export const ButtonStyled = styled.button`
+margin-top: 50px;
+background-color: lightgreen;
+border-radius: 10px;
+height: 40px;
+width: 90%;
+font-size: 20px;
+margin-left: 10px;
 `
